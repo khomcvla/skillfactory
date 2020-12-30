@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 800;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN8rsOX-hpOqc.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+header {
+    background: rgb(49, 48, 48);
+    display: flex;
+    justify-content: center;
+    min-height: 89px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    align-items: center;
+    color: rgb(224, 224, 224);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    justify-content: center;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 126px;
+}
+
+.menu-item:hover {
+    background-color: rgb(255, 45, 45);
+}
+
+main {
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1249px;
+    padding: 110px 0 123px;
+}
+
+.intro-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-wrapper h1 {
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 800;
+    height: 117px;
+    letter-spacing: 1.5px;
+    line-height: 72px;
+    margin-top: -18px;
+    text-transform: uppercase;
+    /* width: 600px; */
+}
+
+.intro-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 73px;
+    letter-spacing: 1.5px;
+    line-height: 28px;
+    margin-top: 40px;
+    opacity: 0.7;
+    padding-top: 5px;
+    width: 545px;
+}
+
+.contact-link {
+    align-items: center;
+    background-color: rgb(255, 45, 45);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    height: 55px;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin-top: 65px;
+    text-decoration: none;
+    width: 227px;
+}
+
+.intro-image {
+    box-shadow: 0 -14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+footer {
+    align-items: center;
+    background-color: rgb(49, 48, 48);
+    display: flex;
+    height: 113px;
+    justify-content: center;
+    min-height: 113px;
+}
+
+.footer-wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 5px;
+    max-width: 1249px;
+    width: 100%;
+}
+
+.footer-text {
+    align-items: center;
+    color: rgb(184, 184, 184);
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 185px;
+}
+
+.icon {
+    height: 33px;
+    width: 33px;
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-wrapper,
+    .intro-image {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 95%;
+        max-width: 551px;
+        margin: auto;
+    }
+
+    .intro-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro-image {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-text,
+    .icons-wrapper {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 378px) and (max-width: 505px) {
+    header {
+        width: 100vw
+    }
+
+    .header-wrapper {
+        width: 377px;
+    }
+}
